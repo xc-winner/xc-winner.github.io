@@ -3,14 +3,14 @@
   <title>Xchao</title>
   
   <subtitle>Xchao</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://xc-winner.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://xc-winner.github.io/"/>
   <updated>2021-06-11T09:27:18.684Z</updated>
-  <id>http://example.com/</id>
+  <id>https://xc-winner.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Xu Chao</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>uniapp</title>
-    <link href="http://example.com/2021/06/11/uniapp/"/>
-    <id>http://example.com/2021/06/11/uniapp/</id>
+    <link href="https://xc-winner.github.io/2021/06/11/uniapp/"/>
+    <id>https://xc-winner.github.io/2021/06/11/uniapp/</id>
     <published>2021-06-11T09:26:41.000Z</published>
     <updated>2021-06-11T09:27:18.684Z</updated>
     
@@ -34,7 +34,7 @@
     
     
     
-    <category term="uniapp" scheme="http://example.com/tags/uniapp/"/>
+    <category term="uniapp" scheme="https://xc-winner.github.io/tags/uniapp/"/>
     
   </entry>
   
