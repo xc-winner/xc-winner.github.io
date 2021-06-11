@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><meta name="author" content="Xu Chao"><link rel="icon" href="/picture.jpg"><title>Chao</title><meta name="description" content="Chao"><link rel="alternate" type="application/rss+xml" title="Chao" href="/atom.xml"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/css/highlight.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><meta name="generator" content="Hexo 5.4.0"></head><body><nav class="navbar navbar-default navbar-fixed-top navbar-custom"><div class="container-fluid"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target="#main-navbar" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand">Chao</a></div><div id="main-navbar" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="/archives">Archive</a></li><li><a target="_blank" rel="noopener" href="https://github.com/xc-winner">Github</a></li><li><a href="/about/">About</a></li></ul></div><div class="avatar-container"><div class="avatar-img-border"><a href="/"><img src="/picture.jpg" class="avatar-img"></a></div></div></div></nav><header class="header-section"><div class="intro-header no-img"><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class="post-heading"><h1>java</h1><p class="post-meta">Posted on 6月 11 2021 · <a href="/tags/java/" class="tag post-meta">java</a></p></div></div></div></div></div></header><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><article role="main" class="blog-post"><h1 id="Java学习"><a href="#Java学习" class="headerlink" title="Java学习"></a>Java学习</h1><h2 id="一、运行第一个Hello-word！"><a href="#一、运行第一个Hello-word！" class="headerlink" title="一、运行第一个Hello,word！"></a>一、运行第一个Hello,word！</h2><ol>
+<li><p>配置安装完环境（检查是否安装成功 用 java -version,推荐使用jdk8.0）。</p>
+</li>
+<li><p>创建一个后缀为java的文件</p>
+</li>
+<li><p>编写如下内容</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        System.out.print(<span class="string">&quot;Hello,word!&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>编译.java 文件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">javac Hello.java</span><br></pre></td></tr></table></figure></li>
+<li><p>运行编译后的文件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java Hello</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="二、语法"><a href="#二、语法" class="headerlink" title="二、语法"></a>二、语法</h2><ol>
+<li><p>注释 <em>书写注释是一个非常好的习惯</em></p>
+<ul>
+<li><p>单行注释<code>//</code></p>
+</li>
+<li><p>多行注释<code>/*  */</code></p>
+</li>
+<li><p>文档注释</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span> HelloWord</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span> java文档注释</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>标识符</p>
+<ul>
+<li>不能用关键字</li>
+</ul>
+<p><img src="F:\笔记\static\image-20210418145806181.png" alt="关键字"></p>
+<ul>
+<li>所有的标识符都应该是以字母<code>（A-Z）</code>|| <code>（a-z）</code>|| <code>$</code> || <code>_</code> 开始</li>
+<li>标识符大小写敏感、<del><em>可以用中文来命名，但是不推荐</em></del></li>
+</ul>
+</li>
+<li><p>数据类型</p>
+<ul>
+<li><p>强类型语言</p>
+</li>
+<li><p>要求变量的使用要严格符合规定，所有变量都必须先定义后在使用。</p>
+</li>
+<li><p>弱类型语言</p>
+</li>
+<li><p>Java的数据类型</p>
+<ul>
+<li><p>整数类型【byte(-128-127)、short(-32768-32767)、<strong>int</strong>(-2147483648-2147483647)、long（<strong>该类型后面加l</strong>）】</p>
+</li>
+<li><p>浮点类型【float<em>长度可参考整数-int</em>(<em>该类型后面加f</em>)、double <em>长度可参考整数-long</em>】 </p>
+</li>
+<li><p>字符类型（char单个字符）</p>
+</li>
+<li><p>字符串类型(String 多个字符 – 是一个类)</p>
+</li>
+<li><p>布尔类型（boolean）值只有true 和false</p>
+</li>
+<li><p>类 、 接口 、数组</p>
+</li>
+<li><p>```java<br> boolean a = true; // 布尔值 值只有true 和false<br> byte c = 100;    //长度 -128-127<br> short d = 10000;  // 长度-32768-32767<br> int b = 1000000000;//整形 常用长度<br> long  e = 10000000000000L; //整形最大长度定义  （后面加L）<br> float f = 1.1F; //浮点型  对应长度为整形的 int（后面加F）<br> double g = 1.352; //浮点型 对应长度为整形的long<br> char h = ‘A’; //单字符类型 用单引号<br> String j = “ABDS”; //字符串类型 用 双引号</p>
+<p> //进制类型声明<br> int i  = 10; //10进制<br> int i2 = 010; //8进制<br> int i3 = 0x10; //16进制</p>
+<p> //浮点拓展<br> //不用浮点型来判断</p>
+<p> //字符扩展<br> char c1= ‘a’;<br> char c2= ‘中’;<br> //所有的字符本质都是数字 可以用(int)强制类型转换</p>
+<p>//像money之类的数值计算（比较大的）<br>int money1 = 2000000;<br>int days   = 200;<br>System.out.println(money1 * (long)days); //如果数值较大会计算溢出</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">4. 变量</span><br><span class="line">   - 变量就是可以变化的量。</span><br><span class="line"></span><br><span class="line">   - Java是强类型语言,每个变量都必须声明类型</span><br><span class="line"></span><br><span class="line">   - 每个变量都有类型，类型可以是基本类型也可以是引用类型（String chart = &quot;我的&quot;）</span><br><span class="line"></span><br><span class="line">   - 分为类变量、实例变量、局部变量  </span><br><span class="line"></span><br><span class="line">     - 局部变量必须声明和赋值</span><br><span class="line">     - 类变量是在类里面方法外面声明的（加static）   //类方法里面可以直接访问</span><br><span class="line">     - 实例变量是在类里面方法外面声明的（不加static） //需要实例化类来访问</span><br><span class="line"></span><br><span class="line">   - 示例代码</span><br><span class="line"></span><br><span class="line">      ```java</span><br><span class="line">       public class Demo02 &#123;</span><br><span class="line">           //类变量</span><br><span class="line">           static double salary = 2500; //类内部可以直接访问</span><br><span class="line">       </span><br><span class="line">           //实例变量</span><br><span class="line">           //除了基本类型其它默认值都为null</span><br><span class="line">           String name; //字符串类型-默认值为null</span><br><span class="line">           int age;  //整数类型-默认值为0</span><br><span class="line">           boolean xieyi; //boolean 默认值为false</span><br><span class="line">           /*</span><br><span class="line">           	main 方法</span><br><span class="line">           */</span><br><span class="line">           public static void main(String[] args) &#123;</span><br><span class="line">       </span><br><span class="line">               //局部变量 : 必须声明和赋值才能使用</span><br><span class="line">               int a = 1;</span><br><span class="line">               System.out.println(a);</span><br><span class="line">               </span><br><span class="line">               //获取实例变量的方式</span><br><span class="line">               //变量类型  变量名</span><br><span class="line">               Demo02 demo02 = new Demo02();</span><br><span class="line">               System.out.println(demo02.age);</span><br><span class="line">           &#125;</span><br><span class="line">           //其他方法</span><br><span class="line">           public void add()&#123;</span><br><span class="line">       		System.out.println(salary); //访问类变量 ;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       </span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>常量</p>
+</li>
+</ol>
+<ul>
+<li>final 常量名 = 常量值</li>
+</ul>
+<ol start="6">
+<li><p>变量、常量命名规范</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 变量的命名规范</span></span><br><span class="line"><span class="comment"> * 1.所有的方法、类名、变量见名知意</span></span><br><span class="line"><span class="comment">    * 2.类成员变量：小驼峰命名法 如 userName</span></span><br><span class="line"><span class="comment">    * 3.局部变量：小驼峰命名法</span></span><br><span class="line"><span class="comment">    * 4.常量：大写字母加下划线 如 USER_NAME</span></span><br><span class="line"><span class="comment">    * 5.类名：大驼峰 如 UserModel</span></span><br><span class="line"><span class="comment">    * 6.方法名：小驼峰命名法</span></span><br><span class="line"><span class="comment">    */</span></span><br></pre></td></tr></table></figure></li>
+<li><p>运算符</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">      <span class="comment">//如果没有long的时候结果都为int</span></span><br><span class="line">      <span class="comment">//如果又double 结果肯定为double</span></span><br><span class="line">      <span class="comment">//+如果两边有字符类型则为字符类型</span></span><br><span class="line"><span class="comment">//关系运算符的结果一定是布尔值</span></span><br><span class="line">      <span class="comment">//逻辑运算符的  || &amp;&amp;</span></span><br><span class="line">   </span><br><span class="line">      <span class="comment">//位运算</span></span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       *  A = 0011 1100</span></span><br><span class="line"><span class="comment">       *  B = 0000 1101</span></span><br><span class="line"><span class="comment">       * -- -- -- -- -- --</span></span><br><span class="line"><span class="comment">       * A&amp;B 两边都为1 则为1  结果为（0000 1100）</span></span><br><span class="line"><span class="comment">       * A|B 有一边为1 则为1  结果为（0011 1101）</span></span><br><span class="line"><span class="comment">       * A^B 两边都为0或者一边为1就是0 否则为1  结果为（0011 0001）</span></span><br><span class="line"><span class="comment">       * A~B 两边都为0或者一边为1就是1 否则为0   结果为（1100 1110）</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">   </span><br><span class="line">      <span class="comment">//位运算</span></span><br><span class="line">      <span class="keyword">int</span> a = <span class="number">2</span>;</span><br><span class="line">      System.out.println(a&lt;&lt;<span class="number">1</span>);</span><br><span class="line">      <span class="comment">// &lt;&lt; *2</span></span><br><span class="line">      <span class="comment">// &gt;&gt; /2</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</article><ul class="pager blog-pager"><li class="next"><a href="/2021/06/11/markdown/" data-toggle="tooltip" data-placement="top" title="markdown">Next Post →</a></li></ul><div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div><script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"> </script><script>var cloudTieConfig = {
+  url: document.location.href, 
+  sourceId: "",
+  productKey: "64d7f0abf9224be3bfdcc6cfb9b83fcf",
+  target: "cloud-tie-wrapper"
+};</script></div></div></div><footer><div class="container beautiful-jekyll-footer"><div class="row"><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center footer-links"><li><a target="_blank" rel="noopener" href="http://weibo.com/bisyao?is_all=1" title="Weibo"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-weibo"></i></span></a></li><li><a target="_blank" rel="noopener" href="https://github.com/twoyao" title="GitHub"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-github"></i></span></a></li><li><a href="/atom.xml" title="RSS"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-rss"></i></span></a></li><li><a target="_blank" rel="noopener" href="https://twitter.com/twoyao_" title="Twitter"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-twitter"></i></span></a></li><li><a href="mailto:bisyao@gmail.com" title="Email me"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-stack-1x fa-inverse fa-envelope"></i></span></a></li></ul><p class="copyright text-muted">© Xu Chao • 2021 • <a href="mailto:undefined"></a>
+</p><p class="theme-by text-muted">Theme by
+<a target="_blank" rel="noopener" href="https://github.com/twoyao/beautiful-hexo">beautiful-hexo</a></p></div></div></div></footer><script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script><script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="/js/main.js"></script><script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script></body></html>
