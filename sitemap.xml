@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xc-winner.github.io/about/index.html</loc>
+    <loc>https://xc-winner.github.io/2021/06/11/thinkphp/</loc>
     
-    <lastmod>2021-06-11</lastmod>
+    <lastmod>2021-07-05</lastmod>
     
   </url>
   
   <url>
-    <loc>https://xc-winner.github.io/2021/06/11/thinkphp/</loc>
+    <loc>https://xc-winner.github.io/about/index.html</loc>
     
     <lastmod>2021-06-11</lastmod>
     
@@ -46,7 +46,7 @@
 
   <url>
     <loc>https://xc-winner.github.io/</loc>
-    <lastmod>2021-06-12</lastmod>
+    <lastmod>2021-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -54,28 +54,21 @@
   
   <url>
     <loc>https://xc-winner.github.io/tags/java/</loc>
-    <lastmod>2021-06-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xc-winner.github.io/tags/uniapp/</loc>
-    <lastmod>2021-06-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xc-winner.github.io/tags/thinkphp/</loc>
-    <lastmod>2021-06-12</lastmod>
+    <lastmod>2021-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://xc-winner.github.io/tags/markdown/</loc>
-    <lastmod>2021-06-12</lastmod>
+    <lastmod>2021-07-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xc-winner.github.io/tags/uniapp/</loc>
+    <lastmod>2021-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
